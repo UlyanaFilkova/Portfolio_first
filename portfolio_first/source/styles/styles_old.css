@@ -1,0 +1,47 @@
+.bg-video{
+    height: 50vh;
+    /* vh - % относительно  текущей высоты экрана*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-video video{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+.nav-container{
+    display:flex;
+    /*по умолчанию flex-direction: row, поэтому для него: */
+    justify-content: space-between;
+    z-index: 2; 
+}
+.nav-container>nav>ul{
+    display:flex;
+    list-style: none;
+    align-items:center; /*в данном случае по центру в вертикали*/
+    margin: 0;
+    padding: 0;
+}
+.nav-container>nav>ul>li>a{
+    display:block;
+    padding:10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media (max-width: 900px){ 
+    /* когда ширина окна <900, применится это: */
+    .nav-container{
+        flex-direction:column;
+    }
+}

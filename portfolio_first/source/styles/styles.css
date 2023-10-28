@@ -1,0 +1,447 @@
+/*почему без этого вокруг белая рамка?*/
+body{
+    margin: -5px;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+ }
+
+ /* HEADER */
+.header { }
+.header_row {
+    /* background-image:url("../images/EIg.gif"); 
+    background-repeat:repeat;  */
+    background-image:url("../images/tumblr_dd727aa81ea5bfd6d1b225ca143ba126_3c7f7cbe_400.webp");
+    background-position: center center;
+    background-size:cover;
+    margin: 0 0 20px 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+.menu_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+.menu_img { }
+.menu_img img{ 
+    margin-top: -10px;
+    max-height: 60px;
+}
+.menu_text_row {
+    margin-right: 30px;
+ }
+.top_destinations, .add_your_boat {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+    color: white;
+    background: none;
+    border: 0;
+    margin: 0 15px 0 0;
+ }
+.sign_up {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px 25px;
+ }
+.search_row {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+ }
+.search_title {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 45px;
+    color: white;
+    margin: 40px 0 10px 0;
+ }
+.search_subtitle {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 15px;
+    color: white;
+    margin: 0 0 30px 0;
+ }
+.search_search {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    /* border-radius: 3px; */
+    
+ }
+.search_text {
+    width: 80%;
+    border: 0;
+    font-size: 10px;
+    line-height: 30px;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+ }
+.search_submit {
+    width: 20%;
+    border: 0;
+    font-size: 10px;
+    line-height: 30px;
+    border-radius: 0 3px 3px 0;
+    background: #E7434E;
+    color: white;
+ }
+ .search_submit img{
+    width: 20px;
+    padding-top: 5px;
+ }
+
+.statistics_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 3px;
+    width: 60%;
+    align-self: center;
+    margin: 20px 0 0 0;
+    /* box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0 10px 5px rgb(155, 155, 155);
+ 
+    position: relative;
+    top: 70px;
+}
+.statistics_column {
+    width: 25%;
+    border-right: 1.5px solid #ccc;
+    margin: 10px 0;
+ }
+ .statistics_column:last-child {
+    border-right: 0
+ }
+.statistics_item_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statistics_item_number {
+    font-weight: bold;
+ }
+
+
+ /* EXPLORE */
+
+.explore {
+    align-self: center;
+    /* max-width: 68%; */
+    margin: 70px 20% 40px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .explore_container {
+    
+ }
+
+.explore_text1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0;
+    color:rgb(39, 39, 39)
+ }
+.explore_text2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0 40px 0;
+    color:rgb(57, 57, 57)
+ }
+
+ .explore_items{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .item {
+    margin: 10px;
+    height: 210px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    /* display: inline-block; */
+
+    border-radius: 5px;
+ }
+
+.main_item { 
+    background-image: url(../images/knlknj.png);
+    width: 460px;
+}
+.item1 { 
+    background-image: url(../images/fhchgk.webp);
+}
+.item2 { 
+    background-image: url(../images/figueira01.jpg);
+}
+.item3 { 
+    background-image: url(../images/caption1.jpg);
+}
+.item4 { 
+    background-image: url(../images/25244553950_044dfbabbb_b.jpg);
+}
+.item_content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: start;
+    height: 100%;
+    width: 100%;
+}
+ 
+.views {
+    color: white;
+    background-color: #E7434E;
+    display: inline;
+    padding: 4px 5px 4px 5px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 7%;
+}
+
+.views img{
+    width: 15px;
+}
+.town_country {
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: thin;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+.town {
+    font-size: 7%;
+ }
+.country { 
+    font-size: 0.5em;
+}
+.explore_more_destinations{
+    margin: 50px 0 0 0;
+    padding: 15px;
+    text-transform: uppercase;
+	font-size: 15px;
+    color: rgb(26, 26, 26);
+    background: none;
+    border: 2px solid rgb(203, 202, 202);
+    border-radius: 5px;
+}
+
+/* MAKE MONEY */
+
+.make_money {
+    background-image:url("../images/423066-Kycb.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+.make_money_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+ }
+.make_money_title {
+    margin: 100px 0 10px 0;
+    font-size: 55px;
+    font-weight: 800px;
+ }
+.make_money_subtitle {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    
+ }
+.make_money_button {
+    margin: 50px 0 100px 0;
+    padding: 15px 35px 15px 35px;
+    text-transform: uppercase;
+    border: 0;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 5px;
+    background: #E7434E;
+    color: white;
+}
+
+/* FEATURED BOATS - тоже EXPLORE */
+
+.featuredItem{
+    margin: 10px;
+    height: 210px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    /* display: inline-block; */
+
+    border-radius: 5px;
+}
+
+.boat_info {
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    font-size: 25px;
+    
+    font-weight: thin;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+ }
+.boat_name {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+.boat_charact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    font-size: 10px;
+ }
+ .boat_charact img{
+    width: 18px;
+    margin-right: 3px;
+    margin-top: 2px;
+ }
+.location {  
+    margin-right: 20px;
+ }
+.people {
+ }
+
+
+/* FOOTER */
+
+hr{
+    margin: 0;
+    
+background: repeating-linear-gradient(
+  315deg,
+ 
+  
+  #2a3467,
+  #262e5a 2px,
+  #E7434E 10px,
+  #E7434E 15px
+);
+height: 7px;
+border: none;
+}
+
+footer {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+ 
+.footer_row { 
+    display: flex;
+    justify-content: space-between;
+    align-items:first baseline;
+    /* max-width: 68%; */
+    /* margin: 0 10% 0 10%; */
+    padding: 30px 0 50px 0;
+    
+}
+
+.footer_row h5{
+    text-transform: uppercase;
+    /* Font-variant: small-caps; */
+    font-size: 10px;
+    margin-bottom: 25px;
+} 
+
+.f_top_locations {
+    margin-right: 10px;
+ }
+.f_featured_boats{
+    margin-right: 10px;
+}
+.f_subscribe{
+    margin-right: 10px;
+    /* width: 30%; */
+}
+.f_contact_us{}
+.f_list {
+    /* width: 20%; */
+    font-size: 10px !important;
+    
+ }
+ .f_list li{
+    list-style: none;
+    padding-bottom: 15px;
+ }
+ .f_list ul{
+    padding-left: 0;
+ }
+.f_subscribe_images{
+    display: flex;
+    margin-top: 20px;
+}
+.f_subscribe_img img{
+    width: 50px;
+    margin-left: 15px;
+}
+
+.f_form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+ }
+.f_form_input {
+    width: 60%;
+    border: 0;
+    font-size: 10px;
+    line-height: 30px;
+    border-radius: 3px 0 0 3px;
+    padding-left: 10px;
+ }
+.f_form_submit {
+    width: 40%;
+    border: 0;
+    font-size: 10px;
+    line-height: 30px;
+    border-radius: 0 3px 3px 0;
+    background: #E7434E;
+    color: white;
+    /* text-transform: uppercase; */
+    Font-variant: small-caps;
+ }
+ .f_form_submit img{
+    width: 18px;
+    margin-right: 1px;
+ }
+
+ .block1 {
+
+    &__elem {
+    }
+}
+.block2 {
+}
